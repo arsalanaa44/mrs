@@ -1,0 +1,81 @@
+/* Global styles */
+body {
+  /* Remove default margins and padding */
+  margin: 0;
+  padding: 0;
+  /* Set the background image and its properties */
+  background-image: url('assets/back_ground.png');
+  background-size: cover;
+  background-position: center;
+  /* Set the height and width of the body to fill the viewport */
+  height: 100vh;
+  width: 100vw;
+  /* Prevent scrolling */
+  overflow: hidden;
+ }
+ 
+ /* Styles for the content box */
+ .content-box {
+  /* Set the background color with transparency */
+  background-color: rgba(255, 255, 255, 0.6);
+  /* Limit the maximum width of the content box */
+  max-width: 80%;
+  /* Add padding around the content box */
+  padding: 20px;
+  /* Round the corners of the content box */
+  border-radius: 10px;
+  /* Position the content box in the center of the page */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Include padding and border in element's total width and height */
+  box-sizing: border-box;
+  /* Make the content box a flex container */
+  display: flex;
+  /* Distribute space evenly between items along the horizontal axis */
+  justify-content: space-between;
+  /* Align items along the vertical axis */
+  align-items: flex-start;
+ }
+ 
+ /* Styles for the sections */
+ .left-section, .right-section {
+  /* Add padding around the sections */
+  padding: 30px;
+  /* Allow the sections to grow and shrink as needed */
+  flex-grow: 1;
+ }
+ 
+ .left-section {
+  /* Add a right border to the left section */
+  border-right: 2px solid black;
+ }
+ 
+ .right-section {
+  /* Set the width of the right section */
+  width: calc(60% - 6px);
+  /* Add padding to the left of the right section */
+  padding-left: 10px;
+ }
+ 
+ /* Styles for form elements and buttons */
+ .form-element {
+  /* Add bottom margin to form elements */
+  margin-bottom: 10px;
+ }
+ 
+ button {
+  /* Add right margin to buttons */
+  margin-right: 15px;
+ }
+ 
+ #clearBtn {
+  /* Add top margin to the clear button */
+  margin-top: 10px;
+ }
+ 
+ .not-available {
+  /* Change the color of the text to red */
+  color: red;
+ }

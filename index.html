@@ -1,0 +1,56 @@
+<!-- Declaration of the document type and HTML version -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head section starts -->
+<head>
+   <!-- Character encoding declaration -->
+   <meta charset="UTF-8">
+   <!-- Viewport settings for responsive design -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Title of the webpage -->
+   <title>Mr or Ms</title>
+   <!-- Linking to external CSS stylesheet -->
+   <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Body section starts -->
+<body>
+   <!-- Main content box -->
+   <div class="content-box">
+       <!-- Form for inputting name and gender -->
+       <form class="left-section" id="nameForm">
+           <h3>Mr or Ms?!</h3>
+           <!-- Label and input field for name -->
+           <label for="name">Name:</label>
+           <input type="text" id="name" name="name" maxlength="255"><br><br>
+
+           <!-- Radio buttons for selecting gender -->
+           <label><input type="radio" id="male" name="gender" value="male"> Male</label>
+           <label><input type="radio" id="female" name="gender" value="female"> Female</label><br><br>
+
+           <!-- Submit button for form -->
+           <button type="submit" id="submitBtn">Submit</button>
+           <!-- Save button for form -->
+           <button type="button" id="saveBtn">Save</button><br><br>
+       </form>
+
+       <!-- Right section for displaying prediction and saved answers -->
+       <div class="right-section">
+           <h4>Prediction</h4>
+           <!-- Display predicted gender -->
+           <p>G: <span id="predicted-gender"></span></p>
+           <!-- Display predicted probability -->
+           <p>P: <span id="predicted-probability"></span></p>
+
+           <h4>Saved Answers</h4>
+           <!-- Frame for displaying saved answers -->
+           <div id="saved-answers-frame" style="border: 1px solid #ccc; min-height: 50px; padding: 10px;">
+               <!-- Saved answers will appear here -->
+           </div>
+           <!-- Clear button for removing saved answers -->
+           <button type="button" id="clearBtn">Clear</button>
+       </div>
+   </div>
+   <!-- Linking to external JavaScript file -->
+   <script src="script.js"></script>
+</body>
+</html>
